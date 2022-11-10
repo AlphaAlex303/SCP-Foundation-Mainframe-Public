@@ -1,0 +1,60 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="256x256" href="../assets/favicons/favicon.png">
+<style>
+  body {
+    background: #a1a1a1;
+    font-family: Baumans;
+  }
+  input {
+    background: #141414;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Baumans;
+    border: none;
+    width: 25%;
+    color: white;
+  }
+  form {
+    padding: 40px;
+    width: 40%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+  }
+</style>
+<form style="background: transparent" id="loginForm"></form>
+
+<center>
+<FORM>
+<h1>SCP FOUNDATION MAINFRAME LOGIN</h1>
+<h3>Enter Your Badge ID to Continue</h3>
+<h2>ATEMPTING TO ACCESS WITH AUTHORIZAION WILL RESULT IN TERMINATION OF OFFENDER</h2>
+<input type="button" value="Attempt Login" onClick="passWord()">
+<input type="button" style="background: #ff5454" value="Give Up" onclick="alert('*Big Breath in...* LOOOOOOOOOOOOOOL'); window.open('https://www.google.com/', '_self')">
+</FORM>
+</center>
+
+
+<script>
+function passWord() {
+  var testV = 1;
+  var pass1 = prompt('Please Enter Your Badge ID',' ');
+  while (testV < 3) {
+if (!pass1)
+  history.go(-1);
+if (pass1.toLowerCase() == "password") {  //and here
+  alert('Validated!');
+  window.open('./MAINPAGE.html', '_self'); // Redirect the page if they get it correct
+break;
+}
+  testV+=1;
+  var pass1 =
+    prompt('MTF has been dispatched to your location.',''); // This is where you edit the message
+}
+  if (pass1.toLowerCase()!="password" & testV ==3) //Change pass here
+    history.go(-1);
+  return " ";
+}
+</script>

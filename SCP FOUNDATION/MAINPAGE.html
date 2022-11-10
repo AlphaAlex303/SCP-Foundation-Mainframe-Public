@@ -1,0 +1,47 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="256x256" href="./assets/favicons/favicon.png">
+<style>
+  body {
+    background: #a1a1a1;
+    font-family: Baumans;
+  }
+  button {
+    font-family: Baumans;
+  }
+  input {
+    background: #141414;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Baumans;
+    border: none;
+    width: 25%;
+    color: white;
+  }
+  form {
+    padding: 40px;
+    width: 40%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+  }
+</style>
+<html>
+<body>
+    <title>Main Frame</title>
+    <center>
+          <h1>Welcome To the SCP Foundation Main Frame!</h1>
+          <h3 style="color: greenyellow;">Continuing to browse this mainframe wil resutlt in you being tracked down and then terminated</h3>
+          <button style="background: red; padding: 10px; border-radius: 5px; border:none; width: 50%" onclick="window.open(`https://www.google.com/`, '_self')">LOG OUT</button>
+    </center>
+    <hr>
+    <div>
+        <!--Buttons-->
+        <center>
+            <button style="background: red; padding: 10px; border-radius: 5px; border:none; width: 5%" onclick="window.open(`./pageModules/SCP_FILES.html`, '_self')">SCP FILES</button>
+            <button style="background: red; padding: 10px; border-radius: 5px; border:none; width: 5%" onclick="window.open(`./pageModules/SCP_RANKS.html`, '_self')">SCP RANKS</button>
+            <button style="background: red; padding: 10px; border-radius: 5px; border:none; width: 5%" onclick="window.open(`./pageModules/Groups_Of_Interest.html`, '_self')">Groups Of Interest</button>
+        </center>
+    </div>
+</body>
