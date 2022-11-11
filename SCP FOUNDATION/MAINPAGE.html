@@ -1,5 +1,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
 <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="256x256" href="./assets/favicons/favicon.png">
 <script>
@@ -39,6 +40,7 @@ document.onkeydown = function(e) {
 <style>
   body {
     background: #a1a1a1;
+    user-select: none;
     font-family: Baumans;
   }
   button {
@@ -54,6 +56,10 @@ document.onkeydown = function(e) {
     width: 25%;
     color: white;
   }
+  hr {
+    border: solid 2px rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+  }
   form {
     padding: 40px;
     width: 40%;
@@ -65,17 +71,21 @@ document.onkeydown = function(e) {
 <body>
     <title>Main Frame</title>
     <center>
-          <h1>Welcome To the SCP Foundation Main Frame!</h1>
-          <h3 style="color: greenyellow;">Continuing to browse this mainframe wil resutlt in you being tracked down and then terminated</h3>
-          <button style="background: red; padding: 10px; border-radius: 5px; border:none; width: 50%" onclick="window.open(`https://www.google.com/`, '_self')">LOG OUT</button>
-    </center>
-    <hr>
-    <div>
-        <!--Buttons-->
-        <center>
-            <button style="background: red; padding: 10px; border-radius: 5px; border:none; width: 5%" onclick="window.open(`./pageModules/SCP_FILES.html`, '_self')">SCP FILES</button>
-            <button style="background: red; padding: 10px; border-radius: 5px; border:none; width: 5%" onclick="window.open(`./pageModules/SCP_RANKS.html`, '_self')">SCP RANKS</button>
-            <button style="background: red; padding: 10px; border-radius: 5px; border:none; width: 5%" onclick="window.open(`./pageModules/Groups_Of_Interest.html`, '_self')">Groups Of Interest</button>
+      <div style="box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 29px 0px; margin-top: 5%; padding: 40px; border-radius: 70px; background: rgba(0, 0, 0, 0.3); width: 50%;">
+          <h1 style="margin-top: 4%">Welcome To the SCP Foundation Main Frame!</h1>
+          <h3 style="color: greenyellow;">Continuing to browse this mainframe wil result in you being tracked down and then terminated</h3>
+          <button style="background: red; padding: 10px; border-radius: 5px; border:none; width: 12%" onclick="window.open(`pageModules/Control.html`, '_self')">O-5 Control</button>
+          <button style="background: red; padding: 10px; border-radius: 5px; border:none; width: 8%" onclick="window.open(`https://www.google.com/`, '_self')">Log Out</button>
+          <hr style="width: 60%; margin-top: 5%">
+          <div style="margin-top: 3%">        
+            <center>
+            <p style="font-weight: 700; font-size: 25px">Pages of Interest</p>
+            <button style="background: red; padding: 10px; border-radius: 5px; border:none; width: 10%" onclick="window.open(`./pageModules/SCP_FILES.html`, '_self')">SCP FILES</button>
+            <button style="background: red; padding: 10px; border-radius: 5px; border:none; width: 10%" onclick="window.open(`./pageModules/SCP_RANKS.html`, '_self')">SCP RANKS</button>
+            <button style="background: red; padding: 10px; border-radius: 5px; border:none; width: 15%" onclick="window.open(`./pageModules/Groups_Of_Interest.html`, '_self')">Groups Of Interest</button>
         </center>
+</div>
+    </center>
+      </div>
     </div>
 </body>
