@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+      <title>Library | TK502</title>
+      <link href="https://tk502-frameproject.surge.sh/style/library.css" rel="stylesheet" type="text/css" />
+   </head>
+    <body oncontextmenu="return false;">
+    <div id="openChat" class="chat">
+         <div class="chat-content">
+            <span class="closeMenu">&times;</span>
+            <h2 style="margin-top: 5%; margin-left: 4%">Chat</h2>
+            <p style="font-size: 15px; color: #bababa; margin-left: 4%">Begin or Join a new room! Play and talk with your friends!</p>
+            <button onclick="openChatMode()" style="position: absolute; width: 130px; margin: 20px; bottom: 0px; right: 0px;">Open</button>
+         </div>
+      </div>
+      </div>
+      </div>
+      <div id="quickSearch" class="modal">
+         <div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0),0 6px 20px 0 rgba(0,0,0,0);
+background: transparent" class="modal-content">
+            <span style="margin-right: 80px;" class="closeSearch">&times;</span>
+           <center>
+           <iframe frameBorder="0" src="https://tk502-frameproject.surge.sh/home/search.html" scrolling="no" style="padding: 10px; border-radius: 10px; background: #12171a; margin-left: 25px; width: 650px; height: 278px;  overflow: hidden;" ></iframe>
+             </center>
+         </div>
+      </div>
+      </div>
+      </div>
+      <div id="myModal" class="modal">
+         <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="margin-top: 5%; margin-left: 4%">Settings</h2>
+            <h3 style="margin-top: 60px; margin-left: 4%">Theme</h3>
+            <p style="color: #bababa; font-size: 15px; margin-left: 4%">Dark Mode (Default)</p>
+            <h3 style="margin-top: 40px; margin-left: 4%">Offline Mode</h3>
+            <p style="color: #bababa; font-size: 15px; margin-left: 4%">Disabled</p>
+         </div>
+      </div>
+      </div>
+      </div>
+      <img id="myBtn" style="position: absolute; top: 0px; right: 0px;" src="https://tk502-frameproject.surge.sh/assets/icons/settings.svg">
+      <img style="position: absolute; top: 0px; right: 50px;" id="chatButton" src="https://tk502-frameproject.surge.sh/assets/icons/chat.svg">
+      <center>
+         <div id="banner" style="margin-top: 10%; height: 50%; width: 53%; border-radius: 30px; padding: 45px;">
+            <h1 style="margin-top: 10%" id="greeting"></h1>
+         </div>
+      </center>
+      <div class="sidenav">
+         <center>
+            <img class="hoverIcon" style="filter: brightness(200%);" onclick="window.open('../home', '_self')" src="https://tk502-frameproject.surge.sh/assets/icons/tk502.svg">
+            <img class="hoverIcon" style="margin-top: 80px" onclick="window.open('../explore', '_self')" src="https://tk502-frameproject.surge.sh/assets/icons/home.svg">
+            <img class="hoverIcon" onclick="window.open('../new', '_self')" src="https://tk502-frameproject.surge.sh/assets/icons/new.svg">
+            <img class="hoverIcon" onclick="window.open('../strategy', '_self')" src="https://tk502-frameproject.surge.sh/assets/icons/strategy.svg">
+            <img class="hoverIcon" onclick="window.open('../multiplayer', '_self')" src="https://tk502-frameproject.surge.sh/assets/icons/multiplayer.svg">
+         </center>
+      </div>
+  <main>
+      <div style="margin-top: 10%; margin-left: 20%" class="row">
+         <h1 style="margin-left: -4%; font-size: 21px;">Shortcuts</h1>
+         <center>
+  <div style="margin-left: -5%" class="row">
+<main class="cards">
+  <article id="searchButton" class="card">
+    <img id="message" style="margin-top: 15%; border-radius: 10px 10px 0 0; padding: 0px" src="https://tk502-frameproject.surge.sh/assets/shortcuts/search.svg">
+    <div class="text">
+  </article>
+  <article onclick="openChatMode()" class="card">
+    <img id="messageIcon" style="margin-top: 15%; border-radius: 0px 0px 0 0; padding: 0px" src="https://tk502-frameproject.surge.sh/assets/shortcuts/messageBar.svg">
+  </article>
+  <article onclick="openSpotify()" class="card">
+    <img id="messageIcon" style="margin-top: 15%; border-radius: 10px 10px 0 0; padding: 0px" src="https://tk502-frameproject.surge.sh/assets/shortcuts/settings.svg">
+  </article>
+  <article onclick="window.open('../ext/changelog', '_self')" class="card">
+    <img id="messageIcon" style="margin-top: 15%; border-radius: 10px 10px 0 0; padding: 0px" src="https://tk502-frameproject.surge.sh/assets/shortcuts/whatsNew.svg">
+  </article>
+</main>
+   </body>
+</html>
+<script src="https://tk502-frameproject.surge.sh/home/modules/time.js"></script>
+<script src="https://tk502-frameproject.surge.sh/home/modules/search.js"></script>
+<script src="https://tk502-frameproject.surge.sh/home/modules/chat.js"></script>
+<script src="https://tk502-frameproject.surge.sh/home/modules/settings.js"></script>
+<script src="../modules/lerp.js"></script>
